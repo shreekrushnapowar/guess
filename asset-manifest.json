@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/guess/static/css/main.1270b13a.chunk.css",
-    "main.js": "/guess/static/js/main.c6ef04b2.chunk.js",
-    "main.js.map": "/guess/static/js/main.c6ef04b2.chunk.js.map",
+    "main.js": "/guess/static/js/main.88f98df8.chunk.js",
+    "main.js.map": "/guess/static/js/main.88f98df8.chunk.js.map",
     "runtime-main.js": "/guess/static/js/runtime-main.124a3812.js",
     "runtime-main.js.map": "/guess/static/js/runtime-main.124a3812.js.map",
     "static/js/2.ff2a0106.chunk.js": "/guess/static/js/2.ff2a0106.chunk.js",
     "static/js/2.ff2a0106.chunk.js.map": "/guess/static/js/2.ff2a0106.chunk.js.map",
     "index.html": "/guess/index.html",
-    "precache-manifest.94beb2ff532c8f7c1c3be42c50112eef.js": "/guess/precache-manifest.94beb2ff532c8f7c1c3be42c50112eef.js",
+    "precache-manifest.0e86e92ec18ee321297863088e44206e.js": "/guess/precache-manifest.0e86e92ec18ee321297863088e44206e.js",
     "service-worker.js": "/guess/service-worker.js",
     "static/css/main.1270b13a.chunk.css.map": "/guess/static/css/main.1270b13a.chunk.css.map",
     "static/js/2.ff2a0106.chunk.js.LICENSE.txt": "/guess/static/js/2.ff2a0106.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.124a3812.js",
     "static/js/2.ff2a0106.chunk.js",
     "static/css/main.1270b13a.chunk.css",
-    "static/js/main.c6ef04b2.chunk.js"
+    "static/js/main.88f98df8.chunk.js"
   ]
 }
