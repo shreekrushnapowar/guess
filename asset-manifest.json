@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.1270b13a.chunk.css",
-    "main.js": "/static/js/main.c6ef04b2.chunk.js",
-    "main.js.map": "/static/js/main.c6ef04b2.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c744de3a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c744de3a.js.map",
-    "static/js/2.ff2a0106.chunk.js": "/static/js/2.ff2a0106.chunk.js",
-    "static/js/2.ff2a0106.chunk.js.map": "/static/js/2.ff2a0106.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.759dc8acde102163c4961bb9dffb57e4.js": "/precache-manifest.759dc8acde102163c4961bb9dffb57e4.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.1270b13a.chunk.css.map": "/static/css/main.1270b13a.chunk.css.map",
-    "static/js/2.ff2a0106.chunk.js.LICENSE.txt": "/static/js/2.ff2a0106.chunk.js.LICENSE.txt"
+    "main.css": "/guess/static/css/main.1270b13a.chunk.css",
+    "main.js": "/guess/static/js/main.c6ef04b2.chunk.js",
+    "main.js.map": "/guess/static/js/main.c6ef04b2.chunk.js.map",
+    "runtime-main.js": "/guess/static/js/runtime-main.124a3812.js",
+    "runtime-main.js.map": "/guess/static/js/runtime-main.124a3812.js.map",
+    "static/js/2.ff2a0106.chunk.js": "/guess/static/js/2.ff2a0106.chunk.js",
+    "static/js/2.ff2a0106.chunk.js.map": "/guess/static/js/2.ff2a0106.chunk.js.map",
+    "index.html": "/guess/index.html",
+    "precache-manifest.94beb2ff532c8f7c1c3be42c50112eef.js": "/guess/precache-manifest.94beb2ff532c8f7c1c3be42c50112eef.js",
+    "service-worker.js": "/guess/service-worker.js",
+    "static/css/main.1270b13a.chunk.css.map": "/guess/static/css/main.1270b13a.chunk.css.map",
+    "static/js/2.ff2a0106.chunk.js.LICENSE.txt": "/guess/static/js/2.ff2a0106.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c744de3a.js",
+    "static/js/runtime-main.124a3812.js",
     "static/js/2.ff2a0106.chunk.js",
     "static/css/main.1270b13a.chunk.css",
     "static/js/main.c6ef04b2.chunk.js"
