@@ -5,9 +5,10 @@ const Form = () => {
     const [selectAnswer, setselectAnswer] = useState("")
     const [score, setscore] = useState(0);
     const [store, setstore] = useState([]);
-    let i=0;
+    const [answerArray, setanswerArray] = useState([]);
+    let i = 0;
     // const store=[];
-    const answerArray=['2 sept','fullstack developer','None','88','chicken 65','Mridanga','Tea','M.S.Dhoni','4','3 idiots'];
+    // const answerArray=['2 sept','fullstack developer','None','88','chicken 65','Mridanga','Tea','M.S.Dhoni','4','3 idiots'];
     const questionArray = [
         {
             'Qno': 0,
@@ -101,21 +102,23 @@ const Form = () => {
         },
     ]
     const onclick = () => {
-        if (questionArray[pageNo].answer === selectAnswer.selectedAnswer) 
-        {
+        const ans = selectAnswer.selectedAnswer;
+        setanswerArray(answerArray.concat(questionArray[pageNo][ans]))
+
+
+        if (questionArray[pageNo].answer === selectAnswer.selectedAnswer) {
             setscore(score + 1);
             // store.push(pageNo);
             setstore(store.concat(1));
-            // console.log('if block', score)
+
         }
         else {
             // store.push(pageNo);
             setstore(store.concat(0));
         }
         setpageNo(pageNo + 1);
-        console.log(score, pageNo)
-        console.log(store);
-        
+
+
     }
     const onchange = (e) => {
         setselectAnswer({ ...selectAnswer, [e.target.name]: e.target.value })
@@ -133,7 +136,7 @@ const Form = () => {
                         <div className="row">
                             <div className='col'>
                                 <div className="form-check">
-                                    <input className="form-check-input" type="radio" name="selectedAnswer" id="exampleRadios1" value="option1" onChange={onchange} checked={1 === 2}/>
+                                    <input className="form-check-input" type="radio" name="selectedAnswer" id="exampleRadios1" value="option1" onChange={onchange} checked={1 === 2} />
                                     <label className="form-check-label" htmlFor="exampleRadios1">
                                         {questionArray[pageNo].option1}
                                     </label>
@@ -141,7 +144,7 @@ const Form = () => {
                             </div>
                             <div className='col'>
                                 <div className="form-check">
-                                    <input className="form-check-input" type="radio" name="selectedAnswer" id="exampleRadios2" value="option2" onChange={onchange} checked={1 === 2}/>
+                                    <input className="form-check-input" type="radio" name="selectedAnswer" id="exampleRadios2" value="option2" onChange={onchange} checked={1 === 2} />
                                     <label className="form-check-label" htmlFor="exampleRadios2">
                                         {questionArray[pageNo].option2}
                                     </label>
@@ -152,7 +155,7 @@ const Form = () => {
                         <div className="row">
                             <div className='col'>
                                 <div className="form-check">
-                                    <input className="form-check-input" type="radio" name="selectedAnswer" id="exampleRadios3" value="option3" onChange={onchange} checked={1 === 2}/>
+                                    <input className="form-check-input" type="radio" name="selectedAnswer" id="exampleRadios3" value="option3" onChange={onchange} checked={1 === 2} />
                                     <label className="form-check-label" htmlFor="exampleRadios3">
                                         {questionArray[pageNo].option3}
                                     </label>
@@ -160,7 +163,7 @@ const Form = () => {
                             </div>
                             <div className='col'>
                                 <div className="form-check">
-                                    <input className="form-check-input" type="radio" name="selectedAnswer" id="exampleRadios4" value="option4" onChange={onchange} checked={1 === 2}/>
+                                    <input className="form-check-input" type="radio" name="selectedAnswer" id="exampleRadios4" value="option4" onChange={onchange} checked={1 === 2} />
                                     <label className="form-check-label" htmlFor="exampleRadios4">
                                         {questionArray[pageNo].option4}
                                     </label>
@@ -176,16 +179,17 @@ const Form = () => {
                 : <div className="card1">
                     <div className="card-body">
                         <h5 className="card-title">
-                        <p>Take the screen shot and send it to shree</p><br/>
-                        <p  style={{color: 'red'}}>Note:You can play only Once</p><br/>
-                            Your Score {score}/10 
-                            {localStorage.setItem('shreescore',1)}
-                            { store.map((item)=>{
-                                let col='';
-                                  item===1?col='green':col='red';
-                                return <p style={{color: col}}>{answerArray[i++]}</p>})}
+                            <p>Take the screen shot and send it to shree</p><br />
+                            <p style={{ color: 'red' }}>Note:You can play only Once</p><br />
+                            Your Score {score}/10
+                            {localStorage.setItem('shreescore', 1)}
+                            {store.map((item) => {
+                                let col = '';
+                                item === 1 ? col = 'green' : col = 'red';
+                                return <p style={{ color: col }}>{answerArray[i++]}</p>
+                            })}
                         </h5>
-                       
+
                     </div>
                 </div>}
         </div>
